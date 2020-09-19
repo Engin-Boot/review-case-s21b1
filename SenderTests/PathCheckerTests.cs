@@ -9,7 +9,7 @@ namespace Sender.Tests
         [Fact]
         public void TestForValidExistingPath()
         {
-            string path = @"D:\a\ReviewOfReviews-S21B1\ReviewOfReviews-S21B1\Sample3.csv";
+            string path = @"D:\a\review-case-s21b1\review-case-s21b1\Sample3.csv";
             Assert.True(PathChecker.DoesPathExists(path));
         }
         [Fact]
