@@ -31,8 +31,8 @@ namespace SenderTests
         [Fact]
         public void TestForRemovingQuotesAndAnyCommasInBetweenQuotes()
         {
-            string input = "I am, using \"Quotes And There are Commas, in, between\" Quotes ";
-            string expected = "I am, using Quotes And There are Commas in between Quotes ";
+            //string input = "I am, using \"Quotes And There are Commas, in, between\" Quotes ";
+            //string expected = "I am, using Quotes And There are Commas in between Quotes ";
             Assert.True(true);
         }
 
