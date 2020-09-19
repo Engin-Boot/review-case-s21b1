@@ -10,7 +10,7 @@ namespace Sender
     {
         static void Main(string[] args)
         {
-            var path = @"D:\a\ReviewOfReviews-S21B1\ReviewOfReviews-S21B1\Sample1.csv";
+            var path = @"D:\a\review-case-s21b1\review-case-s21b11\Sample1.csv";
             if (!PathChecker.DoesPathExists(path))
             {
                 Console.WriteLine("Provide a Existing path");
