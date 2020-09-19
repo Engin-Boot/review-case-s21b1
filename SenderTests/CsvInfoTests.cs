@@ -13,7 +13,7 @@ namespace SenderTests
         [Fact]
         public void GivenValidFilepathReturnsColumnNames()
         {
-            var path = @"D:\a\ReviewOfReviews-S21B1\ReviewOfReviews-S21B1\Sample3.csv";
+            var path = @"D:\a\review-case-s21b1\review-case-s21b1\Sample3.csv";
             string[] result = CsvInfo.GetColumns(path);
             string[] actual = new string[]{ "ReviewDate","Comments","user" };
             Assert.Equal(result.Length,actual.Length);
