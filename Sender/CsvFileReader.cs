@@ -14,7 +14,7 @@ namespace Sender
     }
     public class CsvFileReader : ICsvFileReader
     {
-        public static string[] Read(string path)
+        public string[] Read(string path)
         {
             return File.ReadAllLines(path);
         }
