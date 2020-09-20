@@ -1,0 +1,7 @@
+D:\github\review-case-s21b1\Sender\bin\Debug\Sender.exe.config
+D:\github\review-case-s21b1\Sender\bin\Debug\Sender.exe
+D:\github\review-case-s21b1\Sender\bin\Debug\Sender.pdb
+D:\github\review-case-s21b1\Sender\obj\Debug\Sender.csprojAssemblyReference.cache
+D:\github\review-case-s21b1\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
+D:\github\review-case-s21b1\Sender\obj\Debug\Sender.exe
+D:\github\review-case-s21b1\Sender\obj\Debug\Sender.pdb

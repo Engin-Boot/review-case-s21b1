@@ -1,0 +1,7 @@
+D:\github\review-case-s21b1\Reciever\bin\Debug\Reciever.exe.config
+D:\github\review-case-s21b1\Reciever\bin\Debug\Reciever.exe
+D:\github\review-case-s21b1\Reciever\bin\Debug\Reciever.pdb
+D:\github\review-case-s21b1\Reciever\obj\Debug\Reciever.csprojAssemblyReference.cache
+D:\github\review-case-s21b1\Reciever\obj\Debug\Reciever.csproj.CoreCompileInputs.cache
+D:\github\review-case-s21b1\Reciever\obj\Debug\Reciever.exe
+D:\github\review-case-s21b1\Reciever\obj\Debug\Reciever.pdb
