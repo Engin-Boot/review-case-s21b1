@@ -22,7 +22,8 @@ namespace Sender
             string[] rows = fileReader.Read(path,new string[] { "ReviewDate","Comments" });
             rows = fileReader.SkipHeader(rows);
             IConsoleWriter consoleWriter = new ConsoleWriter();
-            consoleWriter.Write(rows,0,1);
+            string[] dataToprintOnConsole = consoleWriter.GetDataInWritableFormat(rows,0,1);
+            consoleWriter.WriteToConsole(dataToprintOnConsole);
 
 
         }
