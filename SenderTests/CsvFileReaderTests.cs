@@ -12,6 +12,22 @@ namespace SenderTests
     {
         readonly CsvFileReader reader = new CsvFileReader();
         [Fact]
+        public void TestForReadingAllLines()
+        {
+            var path = "C:/Users/Ajay kumar/Desktop/Sample3.csv";
+            string[] result = reader.Read(path);
+            string[] actualStrings = new string[]{ "ReviewDate,Comments,user",
+                "4/27/2020 9:14,what does this help with?,ajay",
+                "5/13/2020 15:45,change spelling,ajay",
+                "5/13/2020 15:50,remove this log if not required,ajay" };
+            Assert.Equal(result.Length, actualStrings.Length);
+            for (int i = 0; i < result.Length; i++)
+            {
+                Assert.Equal(result[i], actualStrings[i]);
+            }
+        }
+        
+        [Fact]
         public void TestForFilteringColumnsWhenRequiredColumnsAreGiven()
         {
             var path = @"D:\a\review-case-s21b1\review-case-s21b1\Sample3.csv";
