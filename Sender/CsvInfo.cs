@@ -11,10 +11,10 @@ namespace Sender
     {
         public static string[] GetColumns(string filePath)
         {
-            if (!PathChecker.DoesPathExists(filePath))
-            {
-                throw new Exception("File doesn't Exist");
-            }
+            //if (!PathChecker.DoesPathExists(filePath))
+            //{
+            //    throw new Exception("File doesn't Exist");
+            //}
 
             var sr = File.OpenText(filePath);
             string[] columns = null;
