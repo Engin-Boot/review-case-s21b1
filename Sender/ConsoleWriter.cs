@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +8,8 @@ namespace Sender
 {
     public interface IConsoleWriter
     {
-        void Write(string[] fileData, int timestampColumnIndex, int commentColumnIndex);
+        string[] GetDataInWritableFormat(string[] fileData, int timestampColumnIndex, int commentColumnIndex);
+        void WriteToConsole(string[] lines);
     }
     public class ConsoleWriter : IConsoleWriter
     {
@@ -19,8 +20,9 @@ namespace Sender
 
         #endregion
 
-        public void Write(string[] fileData, int timestampColumnIndex, int commentColumnIndex)       // change string[] to ..
+        public string[] GetDataInWritableFormat(string[] fileData, int timestampColumnIndex, int commentColumnIndex)       // change string[] to ..
         {
+            List<string> data = new List<string>();
             foreach (var line in fileData)
             {
                 string[] row = GetRowFromLine(line, splitWithCommaFunc);
@@ -28,12 +30,19 @@ namespace Sender
                 string[] reviewWords = GetSeriesOfWords(row[commentColumnIndex], getSeriesOfWordsFunc);
                 for (int i = 0; i < reviewWords.Length; i++)
                 {
-                    Console.WriteLine(timestamp+" "+reviewWords[i]);
+                    //Console.WriteLine(timestamp+" "+reviewWords[i]);
+                    data.Add(timestamp + " " + reviewWords[i]);
                 }
 
             }
-            Console.WriteLine("END");
+
+            return data.ToArray();
+            //Console.WriteLine("END");
         }
+
+        public void WriteToConsole(string[] lines) 
+        {  foreach (var line in lines)
+                Console.WriteLine(line); }
 
         public string[] GetRowFromLine(string line, Func<string, string[]> splitFunc)
         {
