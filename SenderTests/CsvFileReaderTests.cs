@@ -14,7 +14,7 @@ namespace SenderTests
         [Fact]
         public void TestForReadingAllLines()
         {
-            var path = "C:/Users/Ajay kumar/Desktop/Sample3.csv";
+            var path = @"D:\a\review-case-s21b1\review-case-s21b1\Sample3.csv";
             string[] result = reader.Read(path);
             string[] actualStrings = new string[]{ "ReviewDate,Comments,user",
                 "4/27/2020 9:14,what does this help with?,ajay",
