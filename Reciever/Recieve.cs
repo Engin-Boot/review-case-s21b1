@@ -13,6 +13,7 @@ namespace Reciever
             ConsoleReadAndMakeList read = new ConsoleReadAndMakeList();
             WriterCSV write = new Writer(); 
             Dictionary<string, int> wordCount = MakeWordCount.ListToWordCount(read.ReadConsole());
+            write.ValidateOutputFileFormat(filePath);
             Console.WriteLine(Directory.GetCurrentDirectory());
             string pathlocation = FileCreater.GetDirectory("file.csv");
             
