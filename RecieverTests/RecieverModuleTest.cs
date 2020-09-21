@@ -45,6 +45,12 @@ namespace RecieverTest
             string word = "a";
             Assert.True(StopWords.IsStopWordPresentOrNot(word));
         }
+        [Fact]
+        public void WhenFileStreamSucceedsThenWriteOnFile()
+        {
+            _write.WriteToCSV(_wordTest, GetPath(_fileName));
+            Assert.Equal("wwe,2", File.ReadAllLines(GetPath(_fileName))[0]);
+        }
 
 
 
