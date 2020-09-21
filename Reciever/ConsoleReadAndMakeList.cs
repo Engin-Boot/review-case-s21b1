@@ -17,7 +17,8 @@ namespace Reciever
             while (!string.IsNullOrEmpty(buffer = Console.ReadLine()))
             {
                 string[] temp = buffer.Split(' ');  //data time comment
-                content.Add(temp[2]);               //take  comment 
+                if(temp.Length==3)
+                    content.Add(temp[2]);               //take  comment else dont take it
             }
             return content;
         }
