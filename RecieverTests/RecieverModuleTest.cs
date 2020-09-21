@@ -9,7 +9,7 @@ namespace RecieverTest
     public class RecieverModuleTest
     {
         ConsoleReadAndMakeList _read = new ConsoleReadAndMakeList();
-        Writer _write = new Writer();
+        WriterCSV _write = new Writer();
         string _fileName = "testing.csv";
         Dictionary<string, int> _wordTest = new Dictionary<string, int>()
         { {"wwe",2},{"realmad",3},{"fcb" ,4} };
