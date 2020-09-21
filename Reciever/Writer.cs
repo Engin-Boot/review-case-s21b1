@@ -10,9 +10,19 @@ namespace Reciever
     public interface WriterCSV
     {
         void WriteToCSV(Dictionary<string, int> wordCount, string path);
+        void ValidateOutputFileFormat(string filepath);
     }
     public class Writer : WriterCSV
     {
+    
+        public void ValidateOutputFileFormat(string filepath)
+        {
+            string fileExtension = filepath.Substring(filepath.LastIndexOf('.') + 1);
+            if (!fileExtension.Equals("csv") && !fileExtension.Equals("xlsx"))
+                throw new ArgumentException();
+
+        }
+        
         public void WriteToCSV(Dictionary<string, int> wordcount, string path)
         {
             //displose
