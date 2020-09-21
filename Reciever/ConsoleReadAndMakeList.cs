@@ -14,9 +14,10 @@ namespace Reciever
             string buffer;
             List<string> content = new List<string>();
             //read till end line
+            char[] separator=new char[] { ' ' };
             while (!string.IsNullOrEmpty(buffer = Console.ReadLine()))
             {
-                string[] temp = buffer.Split(' ');  //data time comment
+                string[] temp = buffer.Split(separator, StringSplitOptions.RemoveEmptyEntries);  //data time comment
                 if(temp.Length==3)
                     content.Add(temp[2]);               //take  comment else dont take it
             }
