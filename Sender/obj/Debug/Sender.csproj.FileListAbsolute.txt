@@ -5,3 +5,10 @@ D:\github\review-case-s21b1\Sender\obj\Debug\Sender.csprojAssemblyReference.cach
 D:\github\review-case-s21b1\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
 D:\github\review-case-s21b1\Sender\obj\Debug\Sender.exe
 D:\github\review-case-s21b1\Sender\obj\Debug\Sender.pdb
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Sender\bin\Debug\Sender.exe.config
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Sender\bin\Debug\Sender.exe
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Sender\bin\Debug\Sender.pdb
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Sender\obj\Debug\Sender.exe
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Sender\obj\Debug\Sender.pdb
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Sender\obj\Debug\Sender.csprojAssemblyReference.cache

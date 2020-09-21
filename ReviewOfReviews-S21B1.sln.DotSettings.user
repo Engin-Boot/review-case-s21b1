@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=731858a6_002Db393_002D4c02_002D92a4_002De496a29dca87/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="StringExtensionsTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5D5FDC65-67C6-4A36-98BE-6B4CDF47EBDB::.NETCoreApp,Version=v3.1::SenderTests.StringExtensionsTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5D5FDC65-67C6-4A36-98BE-6B4CDF47EBDB::.NETCoreApp,Version=v3.1::Sender.Tests.PathCheckerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5D5FDC65-67C6-4A36-98BE-6B4CDF47EBDB::.NETCoreApp,Version=v3.1::SenderTests.CsvInfoTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5D5FDC65-67C6-4A36-98BE-6B4CDF47EBDB::.NETCoreApp,Version=v3.1::SenderTests.CsvFileReaderTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5D5FDC65-67C6-4A36-98BE-6B4CDF47EBDB::.NETCoreApp,Version=v3.1::SenderTests.ConsoleWriterTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

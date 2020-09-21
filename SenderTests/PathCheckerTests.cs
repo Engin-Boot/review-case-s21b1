@@ -1,6 +1,4 @@
-﻿using Sender;
-using System;
-using Xunit;
+﻿using Xunit;
 
 namespace Sender.Tests
 {

@@ -5,3 +5,10 @@ D:\github\review-case-s21b1\Reciever\obj\Debug\Reciever.csprojAssemblyReference.
 D:\github\review-case-s21b1\Reciever\obj\Debug\Reciever.csproj.CoreCompileInputs.cache
 D:\github\review-case-s21b1\Reciever\obj\Debug\Reciever.exe
 D:\github\review-case-s21b1\Reciever\obj\Debug\Reciever.pdb
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Reciever\bin\Debug\Reciever.exe.config
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Reciever\bin\Debug\Reciever.exe
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Reciever\bin\Debug\Reciever.pdb
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Reciever\obj\Debug\Reciever.csprojAssemblyReference.cache
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Reciever\obj\Debug\Reciever.csproj.CoreCompileInputs.cache
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Reciever\obj\Debug\Reciever.exe
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\Reciever\obj\Debug\Reciever.pdb

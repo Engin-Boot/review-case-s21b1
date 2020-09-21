@@ -97,3 +97,9 @@ D:\github\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.
 D:\github\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.dll
 D:\github\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.pdb
 D:\github\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.genruntimeconfig.cache
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.csprojAssemblyReference.cache
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.AssemblyInfoInputs.cache
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.AssemblyInfo.cs
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.csproj.CoreCompileInputs.cache
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.dll
+C:\Users\Ajay kumar\Desktop\review-case-s21b1\RecieverTests\obj\Debug\netcoreapp3.1\RecieverTests.pdb
