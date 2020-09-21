@@ -63,7 +63,13 @@ namespace RecieverTest
             string word = "ign";
             Assert.False(MakeWordCount.IsStopWordPresentOrNot.Invoke(word));
         }
+        [Fact]
+        public void WhenFileExtensionIsCSVThenThrowError()
+        {
+            string filepath = "file.txt";
 
+            Assert.Throws<ArgumentException>(() => _write.ValidateOutputFileFormat(filepath));
+        }
 
     }
 }
