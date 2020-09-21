@@ -6,6 +6,7 @@ namespace Reciever
 {
     class Recieve
     {
+        [ExcludeFromCodeCoverage]
         static void Main(string[] args)
         {
             //we need to take cosole data and send to make file and do the word count
