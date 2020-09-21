@@ -24,7 +24,7 @@ namespace Reciever
                 using (StreamWriter file = new StreamWriter(path, false))//true--append
                 {
                     foreach (var word in wordcount)
-                        file.WriteLine(word.Key + "," + "," + word.Value);      //making csv
+                        file.WriteLine(word.Key + "," + word.Value);      //making csv
 
                 }
             }
