@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-
+using System.Text.RegularExpressions;
 
 namespace Sender
 {
@@ -51,9 +51,21 @@ namespace Sender
             return fileData.ToArray();
         }
 
-        public string HandleQuotes(string line)
+         public string HandleQuotes(string line)
         {
+            string pattern = "\".*?\"";
+            Regex rgx = new Regex(pattern);
+            MatchEvaluator evaluator = new MatchEvaluator(CommaRemover);
+            line = Regex.Replace(line, pattern, evaluator);
             return line;               // implement quote handling
+        }
+
+        public static string CommaRemover(Match match)
+        {
+            string stringWithQuotes = match.Value;
+            string stringWithoutQuotes = (stringWithQuotes.TrimStart('"')).TrimEnd('"');
+            string stringWithoutCommas = stringWithoutQuotes.Replace(",", "");
+            return stringWithoutCommas;
         }
 
         public string Filter(Func<int[],string,string > columnFilterFunc ,int[] requiredColumnIndexes, string line)
