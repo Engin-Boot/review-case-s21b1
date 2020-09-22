@@ -43,9 +43,10 @@ namespace SenderTests
         [Fact]
         public void TestForRemovingQuotesAndAnyCommasInBetweenQuotes()
         {
-            //string input = "I am, using \"Quotes And There are Commas, in, between\" Quotes ";
-            //string expected = "I am, using Quotes And There are Commas in between Quotes ";
-            Assert.True(true);
+            string input = "I am, using \"Quotes And There are Commas, in, between\" Quotes ";
+            string expected = "I am, using Quotes And There are Commas in between Quotes ";
+            string actual = reader.HandleQuotes(input);
+            Assert.Equal(expected,actual);
         }
 
         private readonly Func<int[], string, string> columnFilterFunc = (columnIndexes, line) =>
