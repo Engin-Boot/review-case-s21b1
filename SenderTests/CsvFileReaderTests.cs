@@ -13,8 +13,10 @@ namespace SenderTests
             var path = @"D:\a\review-case-s21b1\review-case-s21b1\Sample3.csv";
             string[] result = reader.Read(path);
             string[] actualStrings = new string[]{ "ReviewDate,Comments,user",
+                "",
                 "4/27/2020 9:14,what does this help with?,ajay",
                 "5/13/2020 15:45,change spelling,ajay",
+                "",
                 "5/13/2020 15:50,remove this log if not required,ajay" };
             Assert.Equal(result.Length, actualStrings.Length);
             for (int i = 0; i < result.Length; i++)
@@ -49,21 +51,10 @@ namespace SenderTests
             Assert.Equal(expected,actual);
         }
 
-        private readonly Func<int[], string, string> columnFilterFunc = (columnIndexes, line) =>
-        {
-            string filteredLine = "";
-            string[] row = line.Split(',');
-            for (int i = 0; i < columnIndexes.Length; i++)
-            {
-                filteredLine += row[columnIndexes[i]];
-                filteredLine += ",";
-            }
-            return filteredLine.Remove(filteredLine.Length - 1, 1);
-        };
         [Fact]
         public void TestForInvokingTheFilterWhenAFilterIsGiven()
         {
-            string result = reader.Filter(columnFilterFunc, new int[] {0, 1}, "column1,column2,column3");
+            string result = reader.Filter(reader.columnFilterFunc, new int[] {0, 1}, "column1,column2,column3");
             string actual = "column1,column2";
             Assert.Equal(result,actual);
         }

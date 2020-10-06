@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckCsvFormat.cs" />
     <Compile Include="ConsoleWriter.cs" />
     <Compile Include="CsvFileReader.cs" />
     <Compile Include="CsvInfo.cs" />

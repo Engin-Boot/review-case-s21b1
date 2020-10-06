@@ -15,7 +15,11 @@ namespace Sender
                 Console.WriteLine("Provide a Existing path");
                 System.Environment.Exit(1);
             }
-
+            if (!CheckCsvFormat.CheckFormat(path, new string[] { "ReviewDate", "Comments" }))
+            {
+                Console.WriteLine("File is not in required format");
+                System.Environment.Exit(1);
+            }
             ICsvFileReader fileReader = new CsvFileReader();
             
             string[] rows = fileReader.Read(path,new string[] { "ReviewDate","Comments" });

@@ -8,7 +8,9 @@ namespace Sender
 {
     public interface ICsvFileReader
     {
+        string[] Read(string path);
         string[] Read(string filePath, string[] requiredColumns);
+        string HandleQuotes(string line);
         string[] SkipHeader(string[] array);
     }
     public class CsvFileReader : ICsvFileReader
@@ -18,7 +20,7 @@ namespace Sender
             return File.ReadAllLines(path);
         }
 
-        private Func<int[], string, string> columnFilterFunc = (columnIndexes, line) =>
+        public Func<int[], string, string> columnFilterFunc = (columnIndexes, line) =>
         {
             string filteredLine = "";
             string[] row = line.Split(',');
@@ -42,16 +44,25 @@ namespace Sender
                 var line = "";
                 while ((line = csvReader.ReadLine()) != null)
                 {
-                    line = HandleQuotes(line);
-                    line = Filter(columnFilterFunc, requiredColumnIndexes, line);
-                    fileData.Add(line);
+                    ProcessLine(fileData, requiredColumnIndexes, line);
                 }
             }
 
             return fileData.ToArray();
         }
 
-         public string HandleQuotes(string line)
+        public void ProcessLine(List<string> fileData, int[] requiredColumnIndexes, string line)
+        {
+            if (!string.IsNullOrEmpty(line))
+            {
+                line = HandleQuotes(line);
+                line = Filter(columnFilterFunc, requiredColumnIndexes, line);
+                fileData.Add(line);
+            }
+
+        }
+
+        public string HandleQuotes(string line)
         {
             string pattern = "\".*?\"";
             Regex rgx = new Regex(pattern);

@@ -5642,11 +5642,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ajay kumar\\Desktop\\review-case-s21b1\\SenderTests\\SenderTests.csproj",
+      "projectUniqueName": "C:\\Users\\Ajay kumar\\Downloads\\review-case-s21b1-master\\SenderTests\\SenderTests.csproj",
       "projectName": "SenderTests",
-      "projectPath": "C:\\Users\\Ajay kumar\\Desktop\\review-case-s21b1\\SenderTests\\SenderTests.csproj",
+      "projectPath": "C:\\Users\\Ajay kumar\\Downloads\\review-case-s21b1-master\\SenderTests\\SenderTests.csproj",
       "packagesPath": "C:\\Users\\Ajay kumar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ajay kumar\\Desktop\\review-case-s21b1\\SenderTests\\obj\\",
+      "outputPath": "C:\\Users\\Ajay kumar\\Downloads\\review-case-s21b1-master\\SenderTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ajay kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5662,8 +5662,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Ajay kumar\\Desktop\\review-case-s21b1\\Sender\\Sender.csproj": {
-              "projectPath": "C:\\Users\\Ajay kumar\\Desktop\\review-case-s21b1\\Sender\\Sender.csproj"
+            "C:\\Users\\Ajay kumar\\Downloads\\review-case-s21b1-master\\Sender\\Sender.csproj": {
+              "projectPath": "C:\\Users\\Ajay kumar\\Downloads\\review-case-s21b1-master\\Sender\\Sender.csproj"
             }
           }
         }
