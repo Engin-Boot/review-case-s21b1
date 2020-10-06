@@ -36,7 +36,7 @@ Write-Host ""
        }
     }
 
-if($result >= 0.9){
+if($result <= 0.9){
     Write-Host "Coverage Check: failed" -ForegroundColor red 
 }
 else{
